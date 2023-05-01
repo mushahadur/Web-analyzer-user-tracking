@@ -1,0 +1,155 @@
+#body{
+    background: #ebe5ff;
+    padding: 30px 0;
+}
+.mainTopSection{
+    display: block;
+    margin-top: 70px !important;
+}
+#table{
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    transition: all .3s ease 0s;
+}
+.title{
+    background: linear-gradient(to bottom right, #fa6feb, #ffef65 );
+    padding: 40px 20px 170px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+.title::before{
+    content: "";
+    height: 200px;
+    width: 280px;
+    position:absolute;
+    bottom: -170px;
+    left: -46;
+    background: #fff;
+    border-radius: 80px;
+    transform: rotate(-75deg);
+}
+
+
+.title::after{
+    content: "";
+    height: 100px;
+    width: 280px;
+    position:absolute;
+    top: 120px;
+    right: -45;
+    bottom: auto;
+    left: auto;
+    background: #fff;
+    border-radius: 100px;
+    transform: rotate(-25deg);
+
+}
+
+.price{
+    height: 120px;
+    width: 120px;
+    position:absolute;
+    top: 140px;
+    left: 40%;
+    background: #fff;
+    color: #404040;
+    display: inline-block;
+    padding: 30px 0;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    border-radius: 50px;
+    transform: transform(-50%);
+    transition: all .3s ease 0s;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .3);
+}
+
+#table:hover .price{
+    background: linear-gradient(to bottom right, #fa6fa6,#ffe);
+    color: #fff;
+}
+
+.month{
+    padding: 10px;
+   display: block;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 0;
+}
+
+#content{
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    text-align: left;
+    transition: all .3s ease 0s;
+}
+#content li{
+    padding:  7px 0 7px 50px;
+    position: relative;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#content li::before{
+    content:"\f00c";
+    height: 24px;
+    width: 24px;
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    line-height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fb6ee5;
+    color: #fb6ee5;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 12px;
+    transform: translateY(-60% );
+}
+.getstarted{
+    background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
+    position: relative;
+    padding: 10px 40px;
+    font-size: 18pox;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+    color: #404040;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease 0s;
+    z-index: 1;
+}
+
+.getstarted:hover{
+    color: #fff;
+}
+
+.getstarted::before{
+    content:"";
+    height: 92%;
+    width: 98%;
+    position: absolute;
+    top:2px;
+    left: 2px;
+    background: #fff;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.getstarted:hover::before{
+    background: 0 0;
+}
+
